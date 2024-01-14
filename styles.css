@@ -1,0 +1,21 @@
+.logo{
+    height: 60px;
+    width: auto;
+}
+
+.upm-blue{
+    background-color: #1867b7;
+}
+
+.main-content{
+    --bs-gutter-x: 0;
+}
+
+.card-image{
+    width: 25rem;
+}
+
+.profile-image{
+    height: 23rem;
+}
+
