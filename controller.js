@@ -2,6 +2,10 @@ var map = L.map("map", { crs: L.CRS.EPSG4326 }).setView(
   [40.40562217022866, -3.834734211019332],
   17
 );
+var searchbox = L.control.searchbox({
+  position: 'topright',
+  expand: 'left'
+}).addTo(map);
 var capa1 = L.tileLayer.wms("http://vmap0.tiles.osgeo.org/wms/vmap0", {
   layers: "basic",
   format: "image/jpeg",
@@ -62,5 +66,6 @@ var overlays = {
   Canchas: capa6,
   Paradas: capa7,
 };
+
 var baseLayers = { OSGEO: capa1, PNOA: capa2 };
 L.control.layers(baseLayers, overlays).addTo(map);
