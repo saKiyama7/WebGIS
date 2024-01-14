@@ -66,6 +66,11 @@ var overlays = {
   Canchas: capa6,
   Paradas: capa7,
 };
-
+map.on('click',function(e){
+  	
+  	var latlng = e.latlng;
+  	
+  	map.setView(latlng, 100);
+ });
 var baseLayers = { OSGEO: capa1, PNOA: capa2 };
 L.control.layers(baseLayers, overlays).addTo(map);
