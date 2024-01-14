@@ -25,7 +25,7 @@ var map = L.map("map", { crs: L.CRS.EPSG4326 }).setView(
     }
   );
   var capa4 = L.Geoserver.wms(
-    "http://localhost:8080/geoserver/WebGIS/wms",
+    "http://localhost:8080/geoserver/WebGIS/wms", // Change this URL to the one you have in your local GeoServer
     {
       layers: "carretera_acceso",
       format: "image/png",
